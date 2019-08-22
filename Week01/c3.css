@@ -1,0 +1,31 @@
+body{
+  background-color: #364371;
+}
+#wrap{
+  width: 600px;
+  background-color: #B0CFFF;
+  margin: 0 auto;
+}
+#nav{
+  padding: 1em;
+  float: left;
+  width: 150px;
+  margin: 0;
+}
+#nav h2{
+  text-align: center;
+}
+#content{
+  padding-top: 1em;
+  width: 450px;
+  margin: 0 0 0 180px;
+  background-color: #5B7FBD;
+  text-align: center;
+}
+#content ul{
+  list-style: none;
+}
+.copyright{
+  position: relative;
+  bottom: -30px;
+}
