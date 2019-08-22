@@ -3,7 +3,7 @@ body{
 }
 #wrap{
   margin: 0 auto;;
-  width: 60%;
+  width: 600px;
   padding: 0;
   border: 4px dashed black;
   background-color: #F5F5DC;
