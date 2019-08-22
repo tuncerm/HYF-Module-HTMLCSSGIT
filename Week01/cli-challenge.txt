@@ -1,0 +1,28 @@
+1. How do I create a hidden file or folder? How do I display it in the CLI?
+    In order to make a file or folder hidden, we need to put a dot(.) in front of the folder name.
+    (e.g. "mkdir .smt")
+    To list the hidden files and folders, using "a" as a flag with the ls command is sufficient. (e.g. "ls -a")
+    Using capital 'A' might work better in most cases. It will ignore current and parent annotations.
+
+    P.S. This "." will not work on Microsoft Operating Systems. In windows attributes can be used.
+
+2. How do I create multiple nested directories, like /c/Users/myusername/these/folders/are/just/for/fun?
+    This one is a tricky one. One can just go through all of it and use "mkdir these", cd these, "mkdir folders" and so on.
+    Or use the "p" flag which stands for parent. I am not on a windows machine so,
+    "mkdir -p ~/these/folders/are/just/for/fun"
+    is sufficient in my case.
+
+    p.s. If you want to remove these folders, just use "rm -r ~/these".
+
+3. How do I append a message to a file, without a newline character, so the output would be:
+    first message
+    second message
+
+    One can just Open the file, type in the message and save.
+
+    Or, use echo with 2 bigger than signs (>>), which means append, to append at the end of the file.
+    (echo "Your Message Here" >> "Your FileName Here")
+
+    P.S. Here the file system actually helps us. A new line character is automatically added at the end of the file.
+    One can check to see if it is so, easily by typing something at the end of a file in the code editor.
+    As soon as it is saved, a new line will appear at the end.
