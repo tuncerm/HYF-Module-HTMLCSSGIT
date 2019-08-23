@@ -1,0 +1,55 @@
+h1{
+  display: none;
+}
+#header{
+  width: 600px;
+  margin: 0 auto;
+  padding: 20px 0 0 10px;
+}
+blockquote{
+  float: right;
+  font-style: italic;
+  padding: 0;
+  margin-right: 0;
+  font-size: 1.6em;
+}
+blockquote p {
+  margin: 0;
+  font-weight: bold;
+}
+#logo{
+  width: 150px;
+}
+#logo img{
+  width: 150px;
+}
+#content{
+  width: 600px;
+  margin: 0 auto;
+  padding: 0;
+  font-family: Helvetica;
+  font-size: 0.8em;
+}
+#content-side{
+  float: left;
+  width: 190px;
+  margin: 5px 10px 0 0;
+  padding: 0;
+}
+#content-main{
+  float: right;
+  width: 380px;
+  margin: 5px 0 0 10px;
+  padding: 5px;
+}
+a{
+  color: #AE9F96;
+  text-decoration: none;
+}
+#content-side a{
+  font-weight: bold;
+}
+#content-main h2 {
+  line-height: 0.8em;
+  margin: 0;
+}
