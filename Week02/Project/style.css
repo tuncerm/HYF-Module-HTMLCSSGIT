@@ -16,7 +16,7 @@ body {
   padding: 10px;
   font-family: 'Ubuntu', sans-serif;
   color: gray;
-  background-image: url('images/96283454.jpg');
+  background-image: url('./images/96283454.jpg');
 }
 
 img {
