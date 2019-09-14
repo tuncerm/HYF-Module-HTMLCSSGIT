@@ -1,0 +1,270 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+a{
+  text-decoration: none;
+}
+.smt{
+  display: none;
+}
+.h-white a{
+  color: #f0f0f0;
+}
+.h-red a{
+  color: red;
+}
+.h-black a:hover{
+  color: red;
+  text-decoration: underline;
+}
+.h-black a, .h-red a:hover{
+  color: black;
+}
+.underline{
+  text-decoration: underline;
+}
+.grayed{
+  color:gray;
+}
+.author-link{
+  color:gray;
+  text-transform: capitalize;
+}
+.author-link:hover{
+  color:black;
+}
+
+.top-nav{
+  display: flex;
+  background-color: #000;
+}
+.top-nav .nav-menu .nav-item a{
+  color: #fff;
+}
+.nav-menu{
+  list-style: none;
+  display: inline-block;
+  overflow: auto;
+}
+.nav-item{
+  color:red;
+  display: inline;
+  margin-left: 1em;
+}
+.nav-item a{
+  color: black;
+}
+.left{
+  float: left;
+  margin-right: auto;
+}
+.right{
+  float: right;
+  margin-left: auto;
+}
+.center{
+  margin-right: auto;
+  margin-left: auto;
+}
+.text-center{
+  text-align: center;
+}
+.announcement{
+  line-height: 30px;
+  color: #000;
+
+  background: #fd3;
+}
+.sticky-top{
+  line-height: 40px;
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+}
+.top-stories{
+  display: block;
+  overflow: hidden;
+}
+.story{
+  background-image: url('./placeholder.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.top-stories .story{
+  margin: 5px;
+  display: inline;
+  float: left;
+  width: calc(33% - 10px);
+  height: 150px;
+}
+.top-stories .story:first-child{
+  float: left;
+  width: calc(67% - 10px);
+  height: 310px;
+}
+aside{
+  border: 1px solid green;
+  width: 80%;
+  line-height: 120px;
+  height: 120px;;
+  margin: 20px auto;
+  text-align: center;
+}
+.story-img{
+  height: 150px;
+  background-image: url('./placeholder.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 90%;
+  margin: 3px auto;
+}
+.latest-news, .top-deals, .card-holder{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.header{
+  widows: 100%;
+  display: ;
+}
+
+.footer-links{
+  height: 100px;
+  padding: 30px 0;
+  background-color: #131313;
+  color: #fff;
+  text-align: center;
+}
+.footer-copy{
+  height: 100px;
+  line-height: 100px;
+  background-color: black;
+}
+.footer-nav{
+  margin: 10px auto;
+}
+.footer-nav .nav-item a{
+  color: #aaa;
+}
+.footer-nav .nav-item a:hover{
+  color: white;
+}
+.text-white{
+  color:white;
+}
+.text-red{
+  color:red;
+}
+.text-center{
+  text-align: center;
+}
+.footer-text{
+  color: #aaa;
+}
+.strike{
+  text-decoration: line-through;
+}
+.holder{
+  float: right;
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+}
+.off{
+  padding-top: 60px;
+  position: relative;
+  top:-40px;
+  right:-40px;
+  text-align: center;
+  transform: rotate(45deg);
+  background-color: #fd3;
+}
+.top-deals .deal{
+  margin: 10px;
+  width: calc(25% - 20px)
+}
+.top-deals .story{
+  height: 150px;
+}
+.red-underline a{
+  color: red;
+}
+.red-underline a:hover{
+  text-decoration: underline;
+}
+.logo-right{
+  float: right;
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  background-image: url('./placeholder.png');
+  background-position: center;
+  background-size: contain;
+  border: 1px solid red;
+}
+.card-list{
+  margin-left: 20px;
+  list-style: initial;
+}
+.card-latest{
+  overflow: hidden;
+}
+.search{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin: 5px;
+}
+.search:hover{
+  background-color: gray;
+}
+@media (max-width: 767px){
+  .top-nav, .sticky-top .nav-menu{
+    display: none;
+  }
+  .smt{
+    text-align: right;
+    display: block;
+  }
+  .card{
+    width:100%;
+  }
+  .top-stories .story{
+    width: calc(100% - 10px);
+  }
+  .top-stories .story:first-child{
+    width: calc(100% - 10px);
+    height: 150px;
+  }
+  .news-story{
+    width: calc(100% - 20px);
+    margin: 10px;
+  }
+  .news-story .story-img{
+    float: left;
+    width: 50px;
+    height: 50px;
+  }
+}
+@media (max-width: 1023px) and (min-width: 768px){
+  .card{
+    width:50%;
+  }
+  .news-story{
+    width: calc(33% - 20px);
+    margin: 10px;
+  }
+}
+@media (min-width: 1024px){
+  .card{
+    width:33%;
+  }
+  .news-story{
+    width: calc(25% - 20px);
+    margin: 10px;
+  }
+}
