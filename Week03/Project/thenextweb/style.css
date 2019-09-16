@@ -81,6 +81,7 @@ a{
   background-color: #fff;
   position: sticky;
   top: 0;
+  z-index: 100;
 }
 .top-stories{
   display: block;
@@ -190,6 +191,9 @@ aside{
 .top-deals .story{
   height: 150px;
 }
+.card .story{
+  height: 200px;
+}
 .red-underline a{
   color: red;
 }
@@ -230,8 +234,9 @@ aside{
     text-align: right;
     display: block;
   }
-  .card, .deal{
-    width:100%;
+  .card, .top-deals .deal{
+    margin: 5px;
+    width:calc(100% - 10px);
   }
   .top-stories .story{
     width: calc(100% - 10px);
@@ -252,8 +257,9 @@ aside{
   }
 }
 @media (max-width: 1023px) and (min-width: 768px){
-  .card, .deal{
-    width:50%;
+  .card, .top-deals .deal{
+    margin: 5px;
+    width:calc(50% - 10px);
   }
   .news-story{
     width: calc(33% - 20px);
@@ -261,8 +267,9 @@ aside{
   }
 }
 @media (min-width: 1024px){
-  .card, .deal{
-    width:33%;
+  .card, .top-deals .deal{
+    margin: 5px;
+    width:calc(25% - 10px);
   }
   .news-story{
     width: calc(25% - 20px);
