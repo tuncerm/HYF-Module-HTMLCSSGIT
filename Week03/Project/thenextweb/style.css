@@ -141,8 +141,8 @@ aside{
 }
 
 .header{
-  widows: 100%;
-  display: ;
+  width: 100%;
+  display: inline;
 }
 
 .footer-links{
@@ -183,15 +183,15 @@ aside{
 }
 .holder{
   float: right;
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   overflow: hidden;
 }
 .off{
   padding-top: 60px;
   position: relative;
-  top:-40px;
-  right:-40px;
+  top:-30px;
+  right:-45px;
   text-align: center;
   transform: rotate(45deg);
   background-color: #fd3;
