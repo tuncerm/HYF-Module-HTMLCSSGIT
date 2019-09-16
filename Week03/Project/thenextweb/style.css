@@ -230,7 +230,7 @@ aside{
     text-align: right;
     display: block;
   }
-  .card .deal{
+  .card, .deal{
     width:100%;
   }
   .top-stories .story{
@@ -252,7 +252,7 @@ aside{
   }
 }
 @media (max-width: 1023px) and (min-width: 768px){
-  .card .deal{
+  .card, .deal{
     width:50%;
   }
   .news-story{
@@ -261,7 +261,7 @@ aside{
   }
 }
 @media (min-width: 1024px){
-  .card .deal{
+  .card, .deal{
     width:33%;
   }
   .news-story{
