@@ -97,12 +97,12 @@ a{
   display: inline;
   float: left;
   width: calc(33% - 10px);
-  height: 150px;
+  height: 250px;
 }
 .top-stories .story:first-child{
   float: left;
   width: calc(67% - 10px);
-  height: 310px;
+  height: 510px;
 }
 aside{
   border: 1px solid green;
@@ -230,7 +230,7 @@ aside{
     text-align: right;
     display: block;
   }
-  .card{
+  .card .deal{
     width:100%;
   }
   .top-stories .story{
@@ -238,20 +238,21 @@ aside{
   }
   .top-stories .story:first-child{
     width: calc(100% - 10px);
-    height: 150px;
+    height: 250px;
   }
   .news-story{
     width: calc(100% - 20px);
     margin: 10px;
   }
   .news-story .story-img{
+    transition: 0.4s;
     float: left;
     width: 50px;
     height: 50px;
   }
 }
 @media (max-width: 1023px) and (min-width: 768px){
-  .card{
+  .card .deal{
     width:50%;
   }
   .news-story{
@@ -260,11 +261,20 @@ aside{
   }
 }
 @media (min-width: 1024px){
-  .card{
+  .card .deal{
     width:33%;
   }
   .news-story{
     width: calc(25% - 20px);
     margin: 10px;
   }
+}
+.link-logo{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: white;
+}
+.link-logo:hover{
+  background-color: gray;
 }
