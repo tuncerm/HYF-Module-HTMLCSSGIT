@@ -1,6 +1,11 @@
 *{
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+.limitmax {
+  max-width: 1154px;
+  margin: 10px auto;
 }
 a{
   text-decoration: none;
@@ -92,6 +97,13 @@ a{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+}
+.story-content{
+  padding: 4px;
+  word-wrap: normal;
+  position: absolute;
+  bottom: 4px;
 }
 .top-stories .story{
   margin: 5px;
@@ -210,12 +222,22 @@ aside{
   background-size: contain;
   border: 1px solid red;
 }
+.w100{
+  width: 100%;
+}
 .card-list{
   margin-left: 20px;
   list-style: initial;
 }
 .card-latest{
+  padding-top: 5px;
   overflow: hidden;
+  margin-bottom: 5px;
+  background-color: rgba(255,68,34,.06);
+}
+.card-list li {
+  padding: 5px 0 5px 0;
+  border-bottom: 1px solid gray;
 }
 .search{
   width: 30px;
